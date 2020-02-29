@@ -1,4 +1,5 @@
 from selenium import webdriver
+from time import sleep
 
 class EzrealBot():
     def __init__(self):
@@ -21,7 +22,16 @@ class EzrealBot():
         fb_login = self.driver.find_element_by_xpath('//*[@id="loginbutton"]')
         fb_login.click()        
 
-    #def poke(self):
+    def poke(self):
 
-        # //*[@id="u_0_0"]/a[1]
-        # //*[@id="u_0_1"]/a[1]
+        buttons = self.driver.find_elements_by_link_text('Cutuque de volta')
+
+        for button in buttons:
+            button.click()
+            sleep(0.5)
+
+bot = EzrealBot()
+bot.login()
+
+while True:
+    bot.poke()
