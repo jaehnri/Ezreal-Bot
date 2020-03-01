@@ -13,6 +13,8 @@ On Windows, unzip the executable and move it to `\Python27\Scripts`.
 
 Open `ezreal_bot.py` with your favorite text editor and substitute the variables `fb_email` and `fb_pwd` with your Facebook e-mail and password, respectively.  
 
-Run this program by executing `ezreal_bot.py` in your project folder.
+Run this program by executing `python ezreal_bot.py` in your project folder.
 
 Cheers!
+
+Obs: if you have two factor authentication enabled on your Facebook profile, this bot won't be able to log in your account. Please, disable it in order to run this project.
