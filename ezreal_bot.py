@@ -28,7 +28,7 @@ class EzrealBot():
 
         for button in buttons:
             button.click()
-            sleep(10)
+            sleep(1)
 
 bot = EzrealBot()
 bot.login()
